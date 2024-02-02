@@ -14,8 +14,8 @@ function App() {
     <Route path='/' element={<HomePage/>}/>
 
       <Route path='/topic' element={<Topic/>}/>
-      <Route path='/level/:topicid' element={<Level/>}/>
-      <Route path='/test/:levelid' element={<Test/>}/>
+      <Route path='/topic/:topicid' element={<Level/>}/>
+      <Route path='/test/:topicid/:levelid' element={<Test/>}/>
 
       {/* <Route path='*' element={<Error404/>}/> */}
 
