@@ -1,6 +1,82 @@
-.true{
-    background-color: green;
+.all-topics , .test-page-all-div{
+    background-image: url(../../images/m12.jpg);
+
 }
-.false{
-    background-color: red;
+.test-page-all-div{
+    padding: 39px 10px;
+}
+.all-topics{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23rem 10rem;
+}
+.topic-btn{
+color: white;
+    background-color: #1F7299;
+    padding: 18px 42px;
+    border-radius: 0 19px;
+    border-color: #1F7299;
+    transition: 0.5s;
+    font-weight: bold;
+
+}
+.topic-btn:hover{
+    color: #1F7299;
+    background-color: white;
+    font-weight: bold;
+    border-color: #1F7299;
+
+}
+.go-home{
+    width: 98%;
+}
+.level{
+    padding: 23rem 24rem;
+}
+.all-test{
+    margin: 10rem auto;
+    width: 40%;
+    background-color: #04354b;
+    padding: 8px 6px;
+}
+.all-test .my-quiz h4{
+    font-size: 26px;
+    color: white;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.all-test .my-quiz h4 span{
+font-size: 12px;
+text-align: right;
+}
+.all-test .my-quiz .btn-answer{
+    width: 98%;
+    text-align: left;
+    padding: 4px 6px;
+    margin: 4px 2px;
+    border: 1px solid #424242;
+    background-color: #0e3141;
+    font-weight: bold;
+    color: white;
+}
+.all-btn-div{
+    display: flex;
+    flex-direction: column;
+}
+.skip-btn{
+    padding: 9px 0px;
+    background-color: #1F7299;
+    border-radius: 0 20px;
+    border-color: #0e3141;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+.my-quiz{
+    margin: 18px 13px;
 }

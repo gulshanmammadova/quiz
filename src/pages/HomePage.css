@@ -1,4 +1,78 @@
 .home{
-    background: linear-gradient(148deg,rgba(1,152,255,.18) 0%,rgba(0,0,0,0) 100%);
+    background-image: url(../images/m12.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.logo-img{
+    height: 500px;
+    margin-bottom: -10rem;
+    margin-top: 6rem;
+    margin-left: 170px;
+}
+.home-img-container{
+    width: 50%;
+    margin: 1px auto;
+    flex-direction: column;
+display: flex;
+}
+
+.btn {
+    margin-left: 55px;
+    position: relative;
+    color: white;
+    background-color: #1F7299;
+    padding: .75rem 2.5rem;
+    border: none;
+    cursor: pointer;
+transition: 0.3s;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.btn-group{
+    width: 42%;
+    margin: 0px auto;
+    margin-bottom: 4rem;
+}
+tn-masterful {
+    background-color: #fff;
+    color: #1F7299;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
   
+.btn-masterful .icon {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    font-size: 24px;
+}
+.btn-masterful .btn-txt{
+    padding-left: .5rem;
+}
+.btn-masterful:hover {
+    background-color: #fff;
+    color: #1F7299;
+}
+  
+.btn-masterful:hover .icon {
+    animation: rotate 2s linear infinite;
+}
+  
+@keyframes rotate {
+    from {transform: translateY(-50%) rotate(0deg);}
+    to {transform: translateY(-50%) rotate(360deg);}
+}
+.attribute{
+    position: absolute;
+    bottom: 10px;
+}
+  
+.a{
+    
+margin-bottom: 16rem;
 }

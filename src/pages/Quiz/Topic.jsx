@@ -27,14 +27,16 @@ const Topic = () => {
     // console.log(thisTopic)
     return (
         <div>
-            {topics.map(topic => (
+         <div className='all-topics'>
+         {topics.map(topic => (
                 <Link key={topic.topicId} to={{ pathname: `/topic/${topic.topicId}`, state: { thisTopic } }}>
                     {/* <button key={topic.topicId} onClick={() => topicHandle(topic.topicId)}> */}
-                  <button  key={topic.topicId}>
+                  <button  key={topic.topicId} className='topic-btn'>
                         {topic.topicName}
                     </button>
                 </Link>
             ))}
+         </div>
         </div>
     );
 };
