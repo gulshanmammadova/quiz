@@ -6,7 +6,7 @@ import tests from '../../data';
 
 const Topic = () => {
     let topics = [
-        { topicName: 'Movzu1', topicId: 'M1' },
+        { topicName: 'Dövri qanun və dövri sistem', topicId: 'M1' },
         { topicName: 'Movzu2', topicId: 'M2' },
         { topicName: 'Movzu3', topicId: 'M3' },
         { topicName: 'Movzu4', topicId: 'M4' },

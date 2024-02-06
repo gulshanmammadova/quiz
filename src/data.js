@@ -1,37 +1,20 @@
 let tests = [
     {
-        topicName: 'Movzu1',
+        topicName: 'Dövri qanun və dövri sistem',
         level: 'Asan',
         topicId: 'M1',
         levelId: 'A',
-        question: 'En agilli insan kimdir?',
-        answer: 'Gulsen',
-        allAnswer: ['Gulshah', 'Gulchin', 'Gulay', 'Gulsen', 'Gulshan']
+        question: 'Elektron formulu ...3d⁵4s² olan element dövri sistemin hansi dövr və hansı qrupunda yerləşir?',
+        answer: 'III dövr,VII qrupun əlavə yarımqrupunda ',
+        allAnswer: ['IV dövr,VII qrupun əsas yarımqrupunda ', 'IV dövr,II qrupun əlavə yarımqrupunda ', 'IV dövr,VII qrupun əlavə yarımqrupunda ', 'IV dövr,V qrupun əlavə yarımqrupunda ', 'III dövr,VII qrupun əlavə yarımqrupunda ']
     },
+    
     {
-        topicName: 'Movzu1',
-        level: 'Asan',
-        topicId: 'M1',
-        levelId: 'A',
-        question: 'En agilli aile uzvu kimdir?',
-        answer: 'Gulshanndi cavab',
-        allAnswer: ['Gulshah', 'Gulchin', 'Gulay', 'Gulshanndi cavab', 'Gulshan']
-    },
-    {
-        topicName: 'Movzu1',
-        level: 'Asan',
-        topicId: 'M1',
-        levelId: 'A',
-        question: 'En agilli aile uzvu kimdir caavb Gulsen3di?',
-        answer: 'Gulshanndi cavab',
-        allAnswer: ['Gulshah', 'Gulchin', 'Gulay', 'Gulsen3', 'Gulshan']
-    },
-    {
-        topicName: 'Movzu1',
+        topicName: 'Dövri qanun və dövri sistem',
         level: 'Orta',
         topicId: 'M1',
         levelId: 'B',
-        question: 'cavab b herfi',
+        question: 'II qrup',
         answer: 'b herfi',
         allAnswer: ['b herfi', 'Gulchin', 'Gulay', 'Gulsen3', 'Gulshan']
     },

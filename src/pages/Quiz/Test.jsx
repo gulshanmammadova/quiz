@@ -14,6 +14,9 @@ const Test = () => {
   let topicId = location.pathname.slice(location.pathname.length - 4, location.pathname.length - 2)
   let levelId = location.pathname.slice(location.pathname.length - 1, location.pathname.length)
 const [IsSkip, setIsSkip] = useState(false)
+const [countOfTrue, setCountOfTrue] = useState(0)
+const [countOfFalse, setCountOfFalse] = useState(0)
+
 
   let initialQuiz = data.filter(d => (d.levelId === levelId && d.topicId === topicId))
 const [disabledAnswer, setDisabledAnswer] = useState(false)
@@ -24,10 +27,11 @@ const clickAnswer=(myAnswer)=>{
 if(myAnswer==initialQuiz[currentQuestionIndex].answer){
 notify();
 setDisabledAnswer(true)
-
+setCountOfTrue(countOfTrue+1)
 }else{
 setDisabledAnswer(true)
 notifyFalse();
+setCountOfFalse(countOfFalse+1)
 }
 }
 
@@ -35,7 +39,14 @@ notifyFalse();
     setCurrentQuestionIndex(currentQuestionIndex + 1);
     setDisabledAnswer(false)
     setIsSkip(true)
+  
   };
+const countHandle=()=>{
+  setCountOfFalse(0)
+  setCountOfTrue(0)
+}
+// console.log(countOfTrue + ' dogru')
+// console.log(countOfFalse + ' sehv')
 
   return (
   <div className='test-page-all-div'>
@@ -75,17 +86,21 @@ notifyFalse();
          }
         </div>
       )}
-      
-      
+{
+       countOfTrue>0 ? (
+        <span className='span-of-count'>{countOfTrue} - doğru</span>
+     
+       ):null
+}   
       <div className='all-btn-div'>
       {currentQuestionIndex === initialQuiz.length-1 ? (
-          <Link to='/'>
-             <button className='skip-btn' disabled={currentQuestionIndex !== initialQuiz.length - 1}>
+          <Link to='/' className='go-to-homr-anchor'>
+             <button className='skip-btn go-to-home-btn' onClick={()=>{countHandle()}} disabled={currentQuestionIndex !== initialQuiz.length - 1}>
           Ana Səhifə
          </button>
           </Link>
         ):<button className='skip-btn go-home' onClick={handleSkip} disabled={currentQuestionIndex === initialQuiz.length - 1}>
-        Skip
+        Növbəti
       </button>} 
       </div>
         
