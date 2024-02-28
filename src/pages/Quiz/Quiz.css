@@ -46,8 +46,8 @@ color: white;
     color: white;
     margin: 5px 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between; */
+    /* align-items: center; */
 
 }
 .all-test .my-quiz h4 span{

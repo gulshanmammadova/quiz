@@ -7,10 +7,10 @@ import tests from '../../data';
 const Topic = () => {
     let topics = [
         { topicName: 'Dövri qanun və dövri sistem', topicId: 'M1' },
-        { topicName: 'Movzu2', topicId: 'M2' },
-        { topicName: 'Movzu3', topicId: 'M3' },
-        { topicName: 'Movzu4', topicId: 'M4' },
-        { topicName: 'Movzu5', topicId: 'M5' }
+        { topicName: 'Oksid,Əsas,Turşu,Duz', topicId: 'M2' },
+        { topicName: 'Kimyəvi Rabitə', topicId: 'M3' },
+        { topicName: 'Kimyəvi Reaksiya', topicId: 'M4' },
+        { topicName: 'Valentlik,Oksidləşmə dərəcəsi', topicId: 'M5' }
     ];
 
     const [thisTopic, setThisTopic] = useState([]);
